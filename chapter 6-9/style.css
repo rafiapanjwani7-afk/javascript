@@ -1,0 +1,95 @@
+* {
+  margin: 0% auto;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background: #eef2f79d;
+}
+ /* question 3 */
+.heading {
+  color: rgb(165, 115, 39);
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 2vh;
+  margin: 20px;
+  font-style:normal;
+}
+
+.box {
+  border: 1px groove #000;
+  box-shadow: 0 5px 15px rgba(0, 100, 255, 0.2);
+  height: 250px;
+  width: 600px;
+  border-radius: 3vh;
+  background-color: rgba(236, 174, 93, 0.137);
+}
+
+.para {
+  color: rgb(236, 174, 93);
+  line-height: 3vh;
+  word-spacing: 1vh;
+  text-align: center;
+  padding: 3px;
+}
+/* question 5 */
+.myheading {
+  color: rgb(165, 115, 39);
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 2vh;
+ margin: 15px;
+  text-shadow: 4px 4px 4px rgba(165, 115, 39, 0.308) ;
+
+
+}
+.div-table{
+  text-align: center;
+  line-height: 4vh;
+  color:rgb(107, 75, 33);
+  border-radius: 4vh;
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  background-color: rgba(212, 187, 155, 0.445);
+  
+
+}
+/* question 6 */
+table {
+  border-collapse: collapse;
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2), 4px 4px 0 rgba(0, 0, 0, 0.2), 6px 6px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
+  width: 600px;
+  margin-top: 18px;
+  border-radius: 2vh;
+  background-color: rgba(0, 247, 255, 0.233);
+
+}
+
+th {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 22PX;
+  padding: 2px;
+  color: rgb(27, 75, 75);
+}
+td{
+  color: rgb(12, 112, 112);
+}
+
+td,
+th {
+  border: 1px solid #000;
+  box-shadow: 0 5px 15px rgba(122, 167, 235, 0.2);
+  border-radius: 2vh;
+  padding: 10px;
+  border-radius: 2vh;
+  text-align: center;
+  margin: 2px;
+ 
+}
