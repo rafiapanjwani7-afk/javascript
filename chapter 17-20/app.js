@@ -1,13 +1,15 @@
 //--------------- ARRAY AND LOOPS ----------------//
 // Question 1:
-var Multi$Arr = [[], [], []];
- 
+var Multi$Arr = [ [],[],[]];
+
+
 // Question 2;
 document.write("<h1> matrix: </h1>")
-Multi$Arr = [[0, 1, 2, 3][1, 0, 1, 2][2, 1, 0, 1]]
-for (var i = 0; i < 4; i++) {
-    document.write(i + "<br>")
+Multi$Arr = [[0, 1, 2, 3], [1, 0, 1, 2], [2, 1, 0, 1]]
+for (var i = 0; i < Multi$Arr.length; i++) {
+    document.write(Multi$Arr[i].join(" ") + "<br>")
 }
+
 
 // Question 3
 document.write(`<h1>COUNTING:</h1>`)
@@ -75,37 +77,42 @@ document.write(`</br>`)
 document.write(`<h1>bakery:</h1>`)
 var bak_item = ["cake", "apple pie", "cookies", "chips", "patties"]
 var userOrder = prompt("Weclome To ABC bakery. What Do You Want To order Sir/Ma'am?")
+var falg = false
 for (i = 0; i < bak_item.length; i++) {
     if (userOrder.toLowerCase() === bak_item[i]) {
-        document.write("<p>" + bak_item[i] + " is <strong> available </strong> at index " + bak_item.length + " in our bakery </p>")
+        falg = true
+        document.write("<p>" + bak_item[i] + " is <strong> available </strong> at index " + i + " in our bakery </p>")
     }
 
+}
+if (!falg) {
+    document.write("<p> we are sorry ! " + userOrder + " is<strong> not available </strong> in our bakery")
 }
 
 //  Question 8
 document.write(`<h1> biggest Number:</h1>`)
 var arr = [24, 53, 78, 91, 12]
 document.write(`<strong>Array Items:</strong> ${arr} <br>`)
-var Largest = [0]
+var Largest = arr[0];
 for (i = 0; i < arr.length; i++) {
     if (arr[i] > Largest) {
-        Largest = arr[i];
+        Largest = arr[i]
     }
 }
-document.write("<p>The largest number is " + Largest + "</p>");
+document.write("<strong>The largest number  is: </strong> " + Largest + "</br>")
 
 
 //  Question 9
 document.write(`<h1> smaller Number:</h1>`)
 var arr = [24, 53, 78, 91, 12]
 document.write(`<strong>Array Items:</strong> ${arr} <br>`)
-var Smallest = [0]
-for (i = 0; i > arr.length; i++) {
+var Smallest = arr[0];
+for (i = 0; i < arr.length; i++) {
     if (arr[i] < Smallest) {
-        Smallest = arr[i];
+        Smallest = arr[i]
+        document.write("<strong>The Smallest number is: </strong> " + Smallest + "</br>")
     }
 }
-document.write("<p>The Smallest number is " + Smallest + "</p>");
 
 
 //  Question 10
