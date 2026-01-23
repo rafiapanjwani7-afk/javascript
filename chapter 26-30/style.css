@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(82, 64, 41, 0.404);
+}
+div{
+  box-shadow: 0 5px 15px rgba(0, 100, 255, 0.2);
+  height: 550px;
+  width: 600px;
+  border-radius: 3vh;
+  background-color: rgba(236, 174, 93, 0.137);
+  margin-top: 20px;
+}
+p{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(17, 124, 124);
+    margin-top: 10px;
+}
