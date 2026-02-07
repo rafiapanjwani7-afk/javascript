@@ -12,9 +12,9 @@ tellTime()
 // Question 2: Write a function that takes first & last name and then it greets the user using his full name.
 
 function greetsUser(firstName, LastName) {
-    var fullName = firstName + " " + LastName
+    var fullName = firstName+ " " + LastName;
     document.write("<p>Welcome " + fullName + "</p>")
-    return fullName;
+    return fullName.toLowerCase();
 }
 var firstName = prompt("Enter your first name:")
 var LastName = prompt("Enter your last name:")
@@ -129,12 +129,15 @@ document.write("<p>The area of the rectangle is: " + area + "</p>");
 
 // Question 10: Write a JavaScript function that checks whether a passed string is palindrome or not?
 
-function palindrome(str) {
-    var reversedStr = str.split("").reverse().join("");
-    if (str === reversedStr) {
-        document.write("<p>" + str + " is a palindrome.</p>");
+function palindrome(word) {
+    var reversedWord = "";
+    for (var i = word.length - 1; i >= 0; i--) {
+        reversedWord += word[i]
+    }
+    if (word.toLowerCase() === reversedWord.toLowerCase()) {
+        document.write("<p>" + word + " is a palindrome.</p>");
     } else {
-        document.write("<p>" + str + " is not a palindrome.</p>");
+        document.write("<p>" + word + " is not a palindrome.</p>");
     }
 }
 var inputString = prompt("Enter a string to check for palindrome:");
@@ -168,7 +171,7 @@ function findLongestWord(str) {
             longestWord = words[i];
         }
     }
-    return longestWord;
+    return longestWord.toLowerCase();
 }
 var inputString = prompt("Enter a string to find the longest word:");
 var longestWord = findLongestWord(inputString);
