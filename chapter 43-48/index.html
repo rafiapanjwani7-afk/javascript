@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js assignment 43-49</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- question 1 -->
+    <a href="javascript:void(0)" onclick="greet()">Click Me</a>
+
+    <!-- question 2 -->
+
+    <h1>Mobile Phone Lookup</h1>
+    <div>
+        <img src="https://th.bing.com/th/id/OIP.BVr7sIUmxjr0YV-FT4C_wAAAAA?w=120&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt=""
+            onclick="thanks('this is samsung mobile phone')">
+           <p>Rs:50,000</p>
+      
+        
+        <img src="https://th.bing.com/th/id/OIP.QofB7WnfNK5IuYksGbmwIQAAAA?w=120&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt=""
+            onclick="thanks('this is iphone mobile phone')">
+       <p>Rs:1,00000</p>
+       
+        
+        <img src="https://th.bing.com/th/id/OIP.UPq2Cd4pG8APp34W_-W6GQAAAA?w=119&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt=""
+            onclick="thanks('this is realme mobile phone ')">
+        <p>Rs:30,000</p>
+      
+       
+        <img src="https://th.bing.com/th/id/OIP.o5AeoSb_UWCSXCMc3eS4hAAAAA?w=142&h=212&c=7&r=0&o=7&pid=1.7&rm=3" alt=""
+            height="180px" onclick="thanks('this is motorola mobile phone ')">
+        </div>
+        <p>Rs:20,000</p>
+    
+    <!-- question 3 -->
+    <table>
+
+        <h1>index name class</h1>
+        <tr id="tr">
+            <td>0</td>
+            <td>John</td>
+            <td>10</td>
+            <td><button onclick="remove(this)" id="row">Delete</button></td>
+        </tr>
+        <tr id="tr">
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="remove(this)" id="row">Delete</button></td>
+        </tr>
+        <tr id="tr">
+            <td>2</td>
+            <td>John</td>
+            <td>10</td>
+            <td><button onclick="remove(this)" id="row">Delete</button></td>
+        </tr>
+        <tr id="tr">
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="remove(this)" id="row">Delete</button></td>
+        </tr>
+        <tr id="tr">
+            <td>3</td>
+            <td>tom</td>
+            <td>8</td>
+            <td><button onclick="remove(this)" id="row">Delete</button></td>
+        </tr>
+    </table>
+    <!-- question 4 -->
+    <h1>image animation</h1>
+    <img src="images/bulb off.png" alt="" id="myImage" onmouseover="on(this)" onmouseout="off(this)">
+
+    <script src="app.js"></script>
+</body>
+
+</html>
