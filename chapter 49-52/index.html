@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- question 1 -->
+    <form action="">
+        Name:
+        <input type="text" id="name"><br><br>
+        Father name:
+        <input type="text" id="lName"> <br><br>
+        Email:
+        <input type="email" id="email"> <br><br>
+        number:
+        <input type="number" id="no"><br><br>
+        <button onclick="submitForm()">Submit</button>
+    </form>
+    <h1>Data</h1>
+    <p id="para"></p>
+    <p id="paraText"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, ratione voluptates? Obcaecati
+        magnam reprehenderit hic amet corporis, voluptatum saepe exercitationem laudantium consequatur ex et quas natus
+        corrupti expedita,<span id="remaining" style="display: none;"> vitae, cum quos? Doloremque, vero minus illum
+            fugiat ipsa libero quo odio consequuntur saepe nesciunt! Iure, culpa Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Similique ad, a impedit earum consectetur, itaque hic officiis culpa nam blanditiis error
+            quo! Quis itaque magnam dolores maxime ipsam nemo eligendi! Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Saepe tempora facere culpa fugit placeat necessitatibus eum laboriosam, exercitationem
+            ullam commodi, sed unde numquam esse temporibus, dolorum non natus enim voluptatibus!</span> </p>
+    <a href="#" id="link" onclick="expandText()">See more</a>
+    <!-- question 3-->
+    <section>
+        <form class="authForm" id="user">
+            <h1>Student <span class="green">Details</span></h1>
+            <input type="name" placeholder="Name" id="sname" required />
+            <input type="text" placeholder="Class" id="userClass" required />
+            <input type="text" placeholder="Age" id="age" required />
+            <input type="text" placeholder="Roll Number" id="num" required />
+
+            <button type="button" class="authBtn" onclick="addStuden()">
+                Submit
+            </button>
+        </form>
+        <table class="student-table">
+
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Age</th>
+                    <th>Roll Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="tBody">
+            </tbody>
+
+        </table>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
